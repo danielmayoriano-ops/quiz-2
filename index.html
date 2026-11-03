@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recetario Web</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <main class="contenedor">
+    <header class="encabezado">
+      <h1>Recetario Web</h1>
+      <p class="subtitulo">Descubre dos recetas deliciosas para preparar en casa.</p>
+    </header>
+
+    <section aria-labelledby="titulo-recetas">
+      <div class="titulo-seccion">
+        <h2 id="titulo-recetas">Nuestras recetas</h2>
+        <span class="linea"></span>
+      </div>
+
+      <div class="lista-recetas">
+        <!-- Receta dinámica: viene de la API (js/app.js) -->
+        <div id="receta-api" class="lista-recetas" aria-live="polite">
+          <p class="estado">Cargando receta...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
